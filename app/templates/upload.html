@@ -16,7 +16,7 @@
 
         <!-- Upload Card -->
         <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-lg p-8">
-            <form method="POST" action="/result" enctype="multipart/form-data" id="uploadForm">
+            <form action="/predict" method="POST" enctype="multipart/form-data">
                 <!-- File Input Area -->
                 <div class="mb-8">
                     <label for="leafImage" class="block mb-4">
@@ -31,7 +31,7 @@
                             <p class="text-sm text-gray-500">PNG, JPG, JPEG up to 10MB</p>
                         </div>
                     </label>
-                    <input type="file" id="leafImage" name="leafImage" class="hidden" accept="image/png,image/jpeg,image/jpg" required>
+                    <input type="file" id="leafImage" name="image" class="hidden" accept="image/png,image/jpeg,image/jpg" required>
                 </div>
 
                 <!-- Preview Section -->
